@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Componente Químico:</strong>
+  <%= @elemento.componente %>
+</p>
+
+<p>
+  <strong>Estado Físico (25°C):</strong>
+  <%= @elemento.estado %>
+</p>
+
+<p>
+  <strong>Massa Molar (g/mol):</strong>
+  <%= @elemento.massa %>
+</p>
+
+<%= link_to 'Edit', edit_elemento_path(@elemento) %> |
+<%= link_to 'Back', elementos_path %>
