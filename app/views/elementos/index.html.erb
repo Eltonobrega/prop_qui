@@ -1,8 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Elementos</h1>
-
-<table>
+<table class="table table-striped table-hover table-bordered">
   <thead>
     <tr>
       <th>Componente Químico</th>
@@ -18,9 +16,9 @@
         <td><%= elemento.componente %></td>
         <td><%= elemento.estado %></td>
         <td><%= elemento.massa %></td>
-        <td><%= link_to 'Show', elemento %></td>
-        <td><%= link_to 'Edit', edit_elemento_path(elemento) %></td>
-        <td><%= link_to 'Destroy', elemento, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', elemento, class:"btn btn-primary" %></td>
+        <td><%= link_to 'Edit', edit_elemento_path(elemento), class:"btn btn-primary" %></td>
+        <td><%= link_to 'Destroy', elemento, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-primary"%></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +26,4 @@
 
 <br>
 
-<%= link_to 'Cadastrar Novo Elemento', new_elemento_path %>
+<%= link_to 'Cadastrar Novo Elemento', new_elemento_path, class:"btn btn-primary" %>

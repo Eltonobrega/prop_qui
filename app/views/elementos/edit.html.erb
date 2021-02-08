@@ -1,6 +1,6 @@
-<h1>Editando o Elemento</h1>
+<h3>Editando o Elemento</h3>
 
 <%= render 'form', elemento: @elemento %>
 
-<%= link_to 'Show', @elemento %> |
-<%= link_to 'Back', elementos_path %>
+<%= link_to 'Show', @elemento, class: "btn btn-primary" %> 
+<%= link_to 'Back', elementos_path, class: "btn btn-primary" %>

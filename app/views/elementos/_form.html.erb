@@ -11,22 +11,23 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field row mb-3">
     <%= form.label :componente %>
-    <%= form.text_field :componente %>
+    <%= form.text_field :componente, placeholder:"Nome do Elemento"%>
   </div>
 
-  <div class="field">
+  <div class="field row mb-3">
     <%= form.label :estado %>
-    <%= form.text_field :estado %>
+    <%= form.text_field :estado, placeholder:"Estado Físico a 25°C" %>
   </div>
 
-  <div class="field">
+  <div class="field row mb-3">
     <%= form.label :massa %>
-    <%= form.text_field :massa %>
+    <%= form.text_field :massa, placeholder:"Massa Molar em g/mol" %>
   </div>
 
   <div class="actions">
     <%= form.submit %>
   </div>
 <% end %>
+
